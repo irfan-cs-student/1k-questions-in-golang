@@ -15,13 +15,11 @@ func main() {
 	var n int
 	fmt.Print("enter number n: ")
 	fmt.Scan(&n)
-
-	fmt.println("Factorial of :", n)
+	fmt.Println("factorial of: ", n)
 
 	if n < 0 {
 		fmt.Println("factorail not defined for 'n<0'case ")
-	}
-	if n == 1 || n == 0 {
+	} else if n == 1 || n == 0 {
 		fmt.Println("factorial is =", 1)
 	} else {
 
