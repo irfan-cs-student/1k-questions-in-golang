@@ -4,7 +4,6 @@ import "fmt"
 
 // Find the average
 func average(a, b int) int {
-
 	return a / b
 }
 
