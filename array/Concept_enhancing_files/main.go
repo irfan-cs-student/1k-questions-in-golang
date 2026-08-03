@@ -28,6 +28,7 @@ func main() {
 
 	fmt.Println(nums[2])
 }
+//answer: 30
 
 // ============================================================
 // QUESTION 2 — Default Values
