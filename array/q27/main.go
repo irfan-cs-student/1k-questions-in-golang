@@ -2,39 +2,37 @@ package main
 
 import "fmt"
 
-// Find missing number from 1 to 9
+// array is palindrome or not
+func Ispalindrome(a [5]int) bool {
 
-func changeArray(a [9]int) [9]int {
+	var b [5]int
+	indexB := len(a) - 1
 
-	// Traverse remaining elements
-	var b [9]int
-	index := 0
+	for _, value := range a {
 
-	for i := 0; i < len(a); i++ {
+		b[indexB] = value
+		indexB--
+	}
+	//chekig reverse and orignal array values same or diferenet
+	index2B := 0
+	IsSame := true
 
-		found := false
+	for _, value := range a {
 
-		for _, value := range a {
-
-			if value == i {
-				found = true
-				break
-			}
+		if value != b[index2B] {
+			IsSame = false
+			break
 		}
-		if !found {
-			b[index] = i
-			index++
-		}
+		index2B++
 
 	}
-
-	return b
+	return IsSame
 }
 
 func main() {
 
-	nums := [9]int{1, 3, 5, 7, 8}
+	nums := [5]int{1, 2, 3, 9, 1}
 
-	// fmt.Println(changeArray(nums))
-	fmt.Print(changeArray(nums))
+	fmt.Print("palindrome :", Ispalindrome(nums))
+
 }
