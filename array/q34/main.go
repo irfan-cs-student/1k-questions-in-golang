@@ -22,7 +22,7 @@ func extremeNum(a [6]int) (smallest, _2ndSmall, _3rdSmall int) {
 
 			_3rdSmall = _2ndSmall
 			_2ndSmall = value
-		} else if value < _3rdSmall {
+		} else if value < _3rdSmall && value > _2ndSmall {
 			_3rdSmall = value
 		}
 
