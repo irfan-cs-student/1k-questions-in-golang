@@ -135,7 +135,7 @@ func question9() {
 
 	fmt.Println(a == b)
 }
-//answer: true, true,true 
+//answer: true, true,true  
 // ============================================================
 // QUESTION 10 — Different Array Sizes
 // ============================================================
