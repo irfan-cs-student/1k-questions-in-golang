@@ -107,6 +107,7 @@ func question7() {
 
 	fmt.Println(nums)
 }
+//answer:[20,40,60,80]
 
 // ============================================================
 // QUESTION 8 — Range With Index
