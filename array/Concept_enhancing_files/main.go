@@ -148,6 +148,7 @@ func question10() {
 	fmt.Println(a == b)
 }
 //answer: false 
+// no answer: it's compile time error because a has different data types compared to b because of not same length. different length of arrays make different data types even int 
 // ============================================================
 // QUESTION 11 — Array Assignment
 // ============================================================
