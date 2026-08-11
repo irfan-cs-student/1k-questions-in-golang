@@ -184,7 +184,8 @@ func question12() {
 	fmt.Println(a)
 }
 //answer:100,20,30
-// ============================================================
+//answer is wrong because of: nums In function is a separate array not the original array so if we want to change the original array a in the main function so we have to pase Original copy as a pointer With the and (&a)And then pause it with steric to the parameter (nums *[3]int)
+============================================================
 // QUESTION 13 — Function Returning Array
 // ============================================================
 
