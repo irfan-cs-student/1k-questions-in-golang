@@ -237,7 +237,8 @@ func question15() {
 
 	fmt.Println(a)
 }
-
+//answer: compile time error 
+//reason: because get-data func return 2 value instead of 1
 // ============================================================
 // QUESTION 16 — Count Specific Number
 // ============================================================
