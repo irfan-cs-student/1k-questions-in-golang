@@ -300,6 +300,8 @@ func question18() {
 		}
 	}
 }
+//answer:2,2
+//because when the outer when inner loop match with two it has to print two times but break keyword stop timer group just for the one time repetition so again the condition is true for the outer loop so print to for the second time and then break stop the loop
 
 // ============================================================
 // QUESTION 19 — Find Largest
