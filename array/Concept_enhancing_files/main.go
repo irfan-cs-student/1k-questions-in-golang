@@ -342,7 +342,9 @@ func question20() {
 
 	fmt.Println(largest)
 }
-
+//answer:0
+// why's not correct?
+because largest should be minmath or first index value instead of 0 in intilatization 
 // ============================================================
 // QUESTION 21 — Second Largest
 // ============================================================
