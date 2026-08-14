@@ -382,6 +382,7 @@ func question22() {
 
 	fmt.Println(nums)
 }
+//answer:[50,20,30,40,10]
 
 // ============================================================
 // QUESTION 23 — Reverse In Place
