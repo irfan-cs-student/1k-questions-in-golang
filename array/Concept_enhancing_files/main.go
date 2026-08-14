@@ -368,7 +368,8 @@ func question21() {
 	fmt.Println(largest)
 	fmt.Println(second)
 }
-
+//answer:50,10
+//reason we need to update second with also else if nums (i)> second update second=largest 
 // ============================================================
 // QUESTION 22 — Swap Array Elements
 // ============================================================
