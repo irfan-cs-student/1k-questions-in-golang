@@ -434,7 +434,7 @@ func question25() {
 
 	fmt.Println(sum)
 }
-
+//answer: Runtime panic  because index equal to length not exist as last index=length -1
 // ============================================================
 // QUESTION 26 — Nested Loop Logic
 // ============================================================
