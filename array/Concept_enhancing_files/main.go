@@ -505,7 +505,7 @@ func question28() {
 
 	fmt.Println(count2(nums))
 }
-
+//answer: compile time error because original type of array is not matching the parameter array in function count2 because of different length. length is part of data type if length change data type also change. so to argument data type is different to parameter data type
 // ============================================================
 // QUESTION 29 — len() Instead Of Fixed Number
 // ============================================================
