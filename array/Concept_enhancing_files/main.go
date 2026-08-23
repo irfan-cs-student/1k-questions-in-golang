@@ -77,7 +77,7 @@ func question5() {
 		fmt.Print(nums[i], " ")
 	}
 }
-
+//answer:50,40,30,20,10
 // ============================================================
 // QUESTION 6 — Modify Through Loop
 // ============================================================
@@ -92,7 +92,7 @@ func question6() {
 
 	fmt.Println(nums)
 }
-
+//answer: 2,4,6,8,10
 // ============================================================
 // QUESTION 7 — Range Copy Concept
 // ============================================================
@@ -107,6 +107,7 @@ func question7() {
 
 	fmt.Println(nums)
 }
+//answer:[20,40,60,80]
 
 // ============================================================
 // QUESTION 8 — Range With Index
@@ -122,7 +123,7 @@ func question8() {
 
 	fmt.Println(nums)
 }
-
+//answer: [15,25,35,40]
 // ============================================================
 // QUESTION 9 — Array Comparison
 // ============================================================
@@ -134,7 +135,7 @@ func question9() {
 
 	fmt.Println(a == b)
 }
-
+//answer: true, true,true  
 // ============================================================
 // QUESTION 10 — Different Array Sizes
 // ============================================================
@@ -146,7 +147,8 @@ func question10() {
 
 	fmt.Println(a == b)
 }
-
+//answer: false 
+// no answer: it's compile time error because a has different data types compared to b because of not same length. different length of arrays make different data types even int 
 // ============================================================
 // QUESTION 11 — Array Assignment
 // ============================================================
@@ -162,7 +164,8 @@ func question11() {
 	fmt.Println(a)
 	fmt.Println(b)
 }
-
+//[10,20,30]
+//[100,20,30]
 // ============================================================
 // QUESTION 12 — Function Receives Array
 // ============================================================
@@ -180,8 +183,9 @@ func question12() {
 
 	fmt.Println(a)
 }
-
-// ============================================================
+//answer:100,20,30
+//answer is wrong because of: nums In function is a separate array not the original array so if we want to change the original array a in the main function so we have to pase Original copy as a pointer With the and (&a)And then pause it with steric to the parameter (nums *[3]int)
+============================================================
 // QUESTION 13 — Function Returning Array
 // ============================================================
 
@@ -196,7 +200,7 @@ func question13() {
 
 	fmt.Println(nums)
 }
-
+//answer: [5,10,15]
 // ============================================================
 // QUESTION 14 — Return Array + Value
 // ============================================================
@@ -215,7 +219,9 @@ func question14() {
 	fmt.Println(a)
 	fmt.Println(b)
 }
-
+//answer: 
+//[10,20,30] 
+//20
 // ============================================================
 // QUESTION 15 — Multiple Return Trap
 // ============================================================
@@ -231,7 +237,8 @@ func question15() {
 
 	fmt.Println(a)
 }
-
+//answer: compile time error 
+//reason: because get-data func return 2 value instead of 1
 // ============================================================
 // QUESTION 16 — Count Specific Number
 // ============================================================
@@ -251,8 +258,9 @@ func question16() {
 
 	fmt.Println(count)
 }
-
-// ============================================================
+//answer:3
+// 2 element in array is 3 times 
+//============================================================
 // QUESTION 17 — Find Duplicate
 // ============================================================
 
@@ -270,7 +278,7 @@ func question17() {
 		}
 	}
 }
-
+//answer:10, 20
 // ============================================================
 // QUESTION 18 — Duplicate + Break
 // ============================================================
@@ -292,6 +300,8 @@ func question18() {
 		}
 	}
 }
+//answer:2,2
+//because when the outer when inner loop match with two it has to print two times but break keyword stop timer group just for the one time repetition so again the condition is true for the outer loop so print to for the second time and then break stop the loop
 
 // ============================================================
 // QUESTION 19 — Find Largest
@@ -312,7 +322,7 @@ func question19() {
 
 	fmt.Println(largest)
 }
-
+//answer:89
 // ============================================================
 // QUESTION 20 — Largest Initialization Trap
 // ============================================================
@@ -332,7 +342,9 @@ func question20() {
 
 	fmt.Println(largest)
 }
-
+//answer:0
+// why's not correct?
+because largest should be minmath or first index value instead of 0 in intilatization 
 // ============================================================
 // QUESTION 21 — Second Largest
 // ============================================================
@@ -356,7 +368,8 @@ func question21() {
 	fmt.Println(largest)
 	fmt.Println(second)
 }
-
+//answer:50,10
+//reason we need to update second with also else if nums (i)> second update second=largest 
 // ============================================================
 // QUESTION 22 — Swap Array Elements
 // ============================================================
@@ -369,6 +382,7 @@ func question22() {
 
 	fmt.Println(nums)
 }
+//answer:[50,20,30,40,10]
 
 // ============================================================
 // QUESTION 23 — Reverse In Place
@@ -386,7 +400,7 @@ func question23() {
 
 	fmt.Println(nums)
 }
-
+//answer:[5 4 3 2 1]
 // ============================================================
 // QUESTION 24 — Even Numbers
 // ============================================================
@@ -402,7 +416,7 @@ func question24() {
 		}
 	}
 }
-
+//answer:2,4,6
 // ============================================================
 // QUESTION 25 — Wrong Index
 // ============================================================
@@ -420,7 +434,7 @@ func question25() {
 
 	fmt.Println(sum)
 }
-
+//answer: Runtime panic  because index equal to length not exist as last index=length -1
 // ============================================================
 // QUESTION 26 — Nested Loop Logic
 // ============================================================
@@ -439,7 +453,18 @@ func question26() {
 		}
 	}
 }
+//answer:
+1,2,3,4
+2,3,4
+3,4
 
+actually answer:
+1 2
+1 3
+1 4
+2 3
+2 4
+3 4
 // ============================================================
 // QUESTION 27 — Array Passed To Function
 // ============================================================
@@ -464,7 +489,7 @@ func question27() {
 
 	fmt.Println(count(nums, 2))
 }
-
+//answer:3
 // ============================================================
 // QUESTION 28 — Array Type Mismatch
 // ============================================================
@@ -480,7 +505,7 @@ func question28() {
 
 	fmt.Println(count2(nums))
 }
-
+//answer: compile time error because original type of array is not matching the parameter array in function count2 because of different length. length is part of data type if length change data type also change. so to argument data type is different to parameter data type
 // ============================================================
 // QUESTION 29 — len() Instead Of Fixed Number
 // ============================================================
@@ -494,7 +519,7 @@ func question29() {
 		fmt.Println(nums[i])
 	}
 }
-
+//answer: 10,20,30,40,50
 // ============================================================
 // QUESTION 30 — 🔥 DEEP ARRAY CHALLENGE
 // ============================================================
@@ -518,7 +543,8 @@ func question30() {
 		fmt.Print(nums[i], " ")
 	}
 }
-
+//answer : 10,20,30,40,50
+//correct answer is : 1,2,3,4,5 because array is pass by value 
 // ============================================================
 // MISSION
 // ============================================================
