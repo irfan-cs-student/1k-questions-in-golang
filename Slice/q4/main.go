@@ -7,6 +7,11 @@ import "fmt"
 
 func getElements(a []int) (int, int) {
 
+	//for empty slice
+	if len(a) == 0 {
+		return 0, 0
+	}
+
 	last_index := len(a) - 1
 	return a[0], a[last_index]
 
