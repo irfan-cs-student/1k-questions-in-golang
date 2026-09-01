@@ -112,6 +112,9 @@ actually understand what is happening in memory.
 // 	fmt.Println(len(s))
 // 	fmt.Println(cap(s))
 // }
+//answer:[10,20,30]
+3 length 
+3 capacity 
 
 // ==========================================================
 // DAY 02 — NIL SLICE
