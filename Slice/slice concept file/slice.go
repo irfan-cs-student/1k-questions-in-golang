@@ -128,7 +128,10 @@ actually understand what is happening in memory.
 // 	fmt.Println(cap(s))
 // 	fmt.Println(s == nil)
 // }
-
+//answer:[]
+0
+0
+true 
 // ==========================================================
 // DAY 03 — MAKE
 // ==========================================================
