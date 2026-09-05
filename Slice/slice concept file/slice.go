@@ -182,15 +182,16 @@ cap=7
 
 // func main() {
 // 	s := make([]int, 2, 5)
-//
+// len=2,cap=5
 // 	s[0] = 10
 // 	s[1] = 20
-//
+//s=[0,0,10,20]
 // 	s = append(s, 30)
-//
-// 	fmt.Println(s)
-// 	fmt.Println(len(s))
-// 	fmt.Println(cap(s))
+//s=[0,0,10,20,30]
+
+// 	fmt.Println(s) s=[0,0,10,20,30]
+// 	fmt.Println(len(s)) len=5
+// 	fmt.Println(cap(s)) cap=5
 // }
 
 // ==========================================================
