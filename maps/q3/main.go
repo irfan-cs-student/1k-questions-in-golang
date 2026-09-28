@@ -64,4 +64,27 @@ func main() {
 
 	fmt.Println("\n _____total marks in subjects:____", s)
 
+	fmt.Println("\n \n \n  \n  \n  \n \n")
+
+	//-----------------------
+	//maps creations with diferent syntax
+
+	var m map[string]int //nill map
+	// m["ali"] = 2 causr painc becuse we cant add in nill map
+	fmt.Println(m == nil) //true
+
+	// for insertion in nill map
+	m = make(map[string]int)
+	m["ali"] = 2
+	fmt.Println(m)
+
+	var n = make(map[string]int)
+	n["irfan"] = 9
+	fmt.Println(n)
+
+	var o = map[int]string{
+		1: "irfan",
+	}
+	fmt.Println(o)
+
 }
