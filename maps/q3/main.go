@@ -37,9 +37,31 @@ func main() {
 	s["math"] = 10
 	fmt.Println("math after updating: ", s["math"])
 
+	//ok concept
+	math, ok := s["math"]
+	if ok {
+		fmt.Println("math marks:", math)
+
+	} else {
+		fmt.Println("math subject not exist !")
+
+	}
+
 	// deleting math
 	delete(s, "math")
 	fmt.Println("math after updating: ", s["math"])
+
+	//ok concept
+	math_marks, ok := s["math"]
+
+	if ok {
+		fmt.Println("math marks:", math_marks)
+
+	} else {
+		fmt.Println("math subject not exist !")
+
+	}
+
 	fmt.Println("\n _____total marks in subjects:____", s)
 
 }
