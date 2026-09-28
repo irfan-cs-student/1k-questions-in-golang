@@ -3,18 +3,20 @@
 //	Count Word Frequency
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 
 	students := map[string]map[string]int{
-		"class_1": {
+		"prep": {
 
 			"irfan": 1,
 			"ali":   2,
 			"saeed": 3,
 		},
-		"class_2": {
+		"one": {
 
 			"yasir": 22,
 			"noor":  33,
@@ -22,5 +24,19 @@ func main() {
 		},
 	}
 
-	fmt.Println(students)
+	fmt.Println()
+
+	for class, studentmap := range students {
+
+		fmt.Println("class:_______", class)
+		fmt.Println()
+
+		for name, value := range studentmap {
+
+			fmt.Println(name, "--", value)
+
+		}
+		fmt.Println()
+
+	}
 }
