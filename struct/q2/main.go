@@ -58,4 +58,22 @@ func main() {
 	}
 
 	fmt.Println("name:", name, "--salary:", high_salary.salary)
+
+	//average salary of all employee
+	total := 0
+
+	for _, value := range mulazam {
+		total += value.salary
+	}
+
+	fmt.Println("average salary= ", float64(total)/float64(len(mulazam)))
+
+	//updating salary of 1 employee
+	fmt.Println("before update ----name :", mulazam[0].name, " -- salary: ", mulazam[0].salary)
+
+	mulazam[0].salary = 99
+
+	fmt.Println("after update name :", mulazam[0].name, " -- salary: ", mulazam[0].salary)
+
+	fmt.Println()
 }
