@@ -33,4 +33,13 @@ func main() {
 	//how x survive as its not global its func local variable
 	//x survives because its address escapes the function through p,
 	// so Go's compiler moves/keeps x on the heap. that( i asked from gpt for concept )
+
+	// remeber!!!
+
+	// p=adrees of a,(&a),
+	// *p=value of a,**z=value of a,
+	// z=&p,*z=adress of orignal variable,
+	// **z=value of a,&z=adress of z,
+	// z=adress of pointer
+
 }
