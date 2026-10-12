@@ -27,9 +27,9 @@ func main() {
 //ouputa_________
 /*
 
-2a
 2b
-panic 2
+2a
+panic 2 first rewinds 2a from stack and then prints 2b becuse 2b is not in stack
 panic1
 a1
 main
