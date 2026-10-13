@@ -23,5 +23,5 @@ I will become a backend developer.`)
 	file.Close()
 	fmt.Println("File deleted successfully")
 
-	// os.Remove("notes.txt")
+	os.Remove("notes.txt")
 }
