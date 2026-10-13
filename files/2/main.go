@@ -1,4 +1,3 @@
-// Question 2 — Append and Delete a File
 package main
 
 import (
@@ -7,21 +6,41 @@ import (
 )
 
 func main() {
-
-	file, error := os.Create("notes.txt")
-	if error != nil {
-		fmt.Println(error)
+	// 1. Create a file and write text
+	file, err := os.Create("notes.txt")
+	if err != nil {
+		fmt.Println(err)
+		return
 	}
 
-	file.WriteString(`
-I am learning Go.
-I will become a backend developer.`)
+	file.WriteString("I am learning Go.")
+	file.Close()
 
-	data, _ := os.ReadFile("notes.txt")
+	// 2. Open the file and append text
+	file, err = os.OpenFile("notes.txt", os.O_APPEND|os.O_WRONLY, 0644)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	file.WriteString("\nI will become a backend developer.")
+	file.Close()
+
+	// 3. Read and print the complete contents
+	data, err := os.ReadFile("notes.txt")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
 	fmt.Println(string(data))
 
-	file.Close()
-	fmt.Println("File deleted successfully")
+	// 4. Delete the file
+	err = os.Remove("notes.txt")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 
-	os.Remove("notes.txt")
+	fmt.Println("File deleted successfully")
 }
