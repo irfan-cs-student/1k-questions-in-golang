@@ -10,8 +10,8 @@ func main() {
 	myfile, _ := os.Create("student.txt")
 	fmt.Println("Files created successfully")
 
-	// defer fmt.Println("Files deleted successfully")
-	// defer os.Remove("student.txt")
+	defer fmt.Println("Files deleted successfully")
+	defer os.Remove("student.txt")
 
 	defer myfile.Close()
 
