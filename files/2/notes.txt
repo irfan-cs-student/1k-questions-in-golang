@@ -1,0 +1,3 @@
+
+I am learning Go.
+I will become a backend developer.
