@@ -1,5 +1,5 @@
 package main
-
+//open and close the files and learning  about files
 import (
 	"fmt"
 	"os"
